@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".RegisterAdminActivity">
+
+    <TextView
+        android:id="@+id/registerAdminTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER AS ADMIN"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/reg_admin_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerAdminTextView"
+        android:hint="Admin ID*"
+        android:textColorHint="#D3D3D3"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+
+    <EditText
+        android:id="@+id/reg_admin_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email ID*"
+        android:textColorHint="#D3D3D3"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/reg_admin_id"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <EditText
+        android:id="@+id/reg_admin_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password*"
+        android:textColorHint="#D3D3D3"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:layout_below="@+id/reg_admin_email"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <EditText
+        android:id="@+id/admin_secret_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Admin Code*\n(to be given by authority)"
+        android:textColorHint="#D3D3D3"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:layout_below="@+id/reg_admin_password"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <Button
+        android:id="@+id/reg_admin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@+id/admin_secret_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#5A5A5A"/>
+
+    <ProgressBar
+        android:id="@+id/register_admin_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:elevation="10dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

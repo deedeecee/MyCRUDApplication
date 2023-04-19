@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A9A9A9"
+    >
+    
+    <TextView
+        android:id="@+id/bottom_sheet_course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:text="Course name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+   <TextView
+        android:id="@+id/bottom_sheet_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:text="Description"
+        android:layout_below="@id/bottom_sheet_course_name"
+        android:textColor="@color/black"
+        android:singleLine="false"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/bottom_sheet_prerequisites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:text="Prerequisites"
+        android:layout_below="@id/bottom_sheet_description"
+        android:textColor="@color/black"
+        android:singleLine="false"
+        android:textSize="13sp"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottom_sheet_prerequisites"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bottom_sheet_edit_course_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Edit Course"
+            android:textAllCaps="false"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:backgroundTint="#5A5A5A"/>
+
+        <Button
+            android:id="@+id/bottom_sheet_course_details_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="View Details"
+            android:textAllCaps="false"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:backgroundTint="#5A5A5A"/>
+    </LinearLayout>
+</RelativeLayout>

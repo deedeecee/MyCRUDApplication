@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A9A9A9">
+
+        <TextView
+            android:id="@+id/textView_item_course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course name"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@id/textView_item_course_id"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_margin="3dp"
+            android:padding="4dp"
+            />
+
+        <TextView
+            android:id="@+id/textView_item_course_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course ID"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_margin="3dp"
+            android:padding="4dp"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
